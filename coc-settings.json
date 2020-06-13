@@ -1,0 +1,50 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "html",
+        "markdown",
+        "javascript",
+        "yaml",
+        "json",
+        "python"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "~/miniconda3/bin/black",
+    "python.linting.pylintPath": "~/miniconda3/bin/pylint",
+    "python.condaPath": "~/miniconda3/bin/conda",
+    "python.jediPath": "~/miniconda3/lib/python3.7/site-packages",
+    "python.pythonPath": "~/miniconda3/bin/python",
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/snips"
+    ],
+    //"snippets.userSnippetsDirectory": "~/config/nvim/snips",
+    "explorer.width": 30,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.keyMappings": {
+        "<cr>": [
+            "expandable?",
+            "expand",
+            "open"
+        ],
+        "v": "open:vsplit"
+    },
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        }
+    }
+}
