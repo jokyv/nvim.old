@@ -2,7 +2,7 @@
 
 - Ubuntu
 ```
-sudo apt get neovim
+sudo apt-get neovim
 ```
 - Manjaro or Arch
 ```
@@ -10,7 +10,7 @@ sudo pacman -S neovim
 ```
 ## Clone repo to dot folder
 ```
-git clone https://github.com/jokyv/nvim.git ~/dot/nvim
+git clone https://github.com/jokyv/nvim.git ~/dot/
 ```
 ## Symbolic link to .config folder
 ```
@@ -22,9 +22,9 @@ pip install pynvim
 npm i -g neovim
 ```
 ## Install coc-extensions
-
-``CocInstall coc-json coc-python coc-snippets coc-vimlsp``
-
+```
+CocInstall coc-json coc-python coc-snippets coc-vimlsp
+```
 ## Install clipboard support
 - Ubuntu
 ```
