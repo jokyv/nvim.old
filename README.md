@@ -1,5 +1,4 @@
 ## How to install nvim
-
 - Ubuntu
 ```
 sudo apt-get neovim
@@ -23,7 +22,7 @@ npm i -g neovim
 ```
 ## Install coc-extensions
 ```
-CocInstall coc-json coc-python coc-snippets coc-vimlsp
+CocInstall coc-json coc-python coc-snippets coc-vimlsp coc-pairs coc-jedi coc-explorer
 ```
 ## Install clipboard support
 - Ubuntu
@@ -38,3 +37,4 @@ sudo pacman -S xsel
 ## Todo list
 - fix snips
 - script to automate nvim installation
+- replace coc-exporer for ranger or other?
