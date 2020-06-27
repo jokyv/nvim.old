@@ -96,5 +96,6 @@ let g:coc_explorer_global_presets = {
 
 " vim slime configurations
 " https://github.com/jpalardy/vim-slime
+" let g:slime_target = "screen"
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "2"}
