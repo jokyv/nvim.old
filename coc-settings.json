@@ -12,11 +12,12 @@
     "python.linting.pylintEnabled": true,
     "python.jediEnabled": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "~/miniconda3/bin/black",
-    "python.linting.pylintPath": "~/miniconda3/bin/pylint",
-    "python.condaPath": "~/miniconda3/bin/conda",
-    "python.jediPath": "~/miniconda3/lib/python3.7/site-packages",
-    "python.pythonPath": "~/miniconda3/bin/python",
+    "python.formatting.blackPath": "~/mconda/bin/black",
+    "python.linting.pylintPath": "~/mconda/bin/pylint",
+    "python.condaPath": "~/mconda/bin/conda",
+    "python.jediPath": "~/mconda/lib/python3.7/site-packages",
+    "python.pythonPath": "~/mconda/bin/python",
+    "python3_host_prog": "~/mconda/bin/python3",
     "snippets.ultisnips.directories": [
         "UltiSnips",
         "~/.config/nvim/snips"
