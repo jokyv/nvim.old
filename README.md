@@ -9,7 +9,7 @@ sudo pacman -S neovim
 ```
 ## Clone repo to dot folder
 ```
-git clone https://github.com/jokyv/nvim.git ~/dot/
+git clone https://github.com/jokyv/nvim.git ~/dot/nvim
 ```
 ## Symbolic link to .config folder
 ```
@@ -17,10 +17,11 @@ ln -s ~/dot/nvim ~/.config/
 ```
 ## Install python & node support
 ```
-pip install pynvim
-npm i -g neovim
+pip3 install pynvim
+sudo apt install npm
+sudo npm i -g neovim
 ```
-## Install coc-extensions
+## Install nvim plugins and coc-extensions
 ```
 CocInstall coc-json coc-python coc-snippets coc-vimlsp coc-pairs coc-jedi coc-explorer
 ```
