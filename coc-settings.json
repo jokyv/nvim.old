@@ -15,9 +15,8 @@
     "python.formatting.blackPath": "~/mconda/bin/black",
     "python.linting.pylintPath": "~/mconda/bin/pylint",
     "python.condaPath": "~/mconda/bin/conda",
-    "python.jediPath": "~/mconda/lib/python3.7/site-packages",
+    "python.jediPath": "~/mconda/lib/python3.8/site-packages",
     "python.pythonPath": "~/mconda/bin/python",
-    "python3_host_prog": "~/mconda/bin/python3",
     "snippets.ultisnips.directories": [
         "UltiSnips",
         "~/.config/nvim/snips"
