@@ -1,9 +1,5 @@
 ## How to install nvim
-- Ubuntu
-```
-sudo apt-get neovim
-```
-- Manjaro or Arch
+
 ```
 sudo pacman -S neovim
 ```
@@ -26,11 +22,7 @@ sudo npm i -g neovim
 CocInstall coc-json coc-python coc-snippets coc-vimlsp coc-pairs coc-jedi coc-explorer
 ```
 ## Install clipboard support
-- Ubuntu
-```
-sudo apt install xsel
-```
-- Manjaro or Arch
+
 ```
 sudo pacman -S xsel
 ```
