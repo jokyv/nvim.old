@@ -13,6 +13,7 @@ ln -s ~/dot/nvim ~/.config/
 ```
 ## Install python & node support
 ```
+pacman -S python-pip	
 pip3 install pynvim # try pip or pip3
 sudo apt install npm
 sudo npm i -g neovim
