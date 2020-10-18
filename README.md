@@ -7,6 +7,11 @@ sudo pacman -S neovim
 ```
 git clone https://github.com/jokyv/nvim.git ~/dot/nvim
 ```
+## Run the following script
+```
+~/dot/scripts/nvim-configurations
+```
+## Manual configuration
 ## Symbolic link to .config folder
 ```
 ln -s ~/dot/nvim ~/.config/
