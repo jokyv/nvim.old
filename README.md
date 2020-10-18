@@ -14,8 +14,8 @@ ln -s ~/dot/nvim ~/.config/
 ## Install python & node support
 ```
 pacman -S python-pip	
-pip3 install pynvim # try pip or pip3
-sudo apt install npm
+pip3 install pynvim 
+sudo pacman -S npm
 sudo npm i -g neovim
 ```
 ## Install nvim plugins and coc-extensions
