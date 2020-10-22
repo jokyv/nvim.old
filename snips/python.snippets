@@ -51,12 +51,18 @@ endsnippet
 
 snippet jokyvv "import my python scripts"
 import pandas as pd
-import sys
+import jokyv.util
+from jokyv.oandapp import new_d_data as ndd
 pd.options.display.float_format = "{:.4f}".format
-sys.path.append('/home/jokyv/projects/jokyv')
-import util
-from oandapp import new_d_data as ndd
 obj = ndd.Downloaddata('$0', '$1', None, symbols="all")
 df = obj.get_df()
 $2
+endsnippet
+
+snippet emaill "send emails"
+import jokyv.util as u
+TITLE = "$1"
+MESSAGE = "$2"
+ATTACHMENTS = ['$3',]
+u.send_email(TITLE, MESSAGE, ATTACHMENTS)
 endsnippet

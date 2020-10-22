@@ -11,6 +11,7 @@ source $HOME/.config/nvim/settings/coc.vim
 source $HOME/.config/nvim/settings/fzf.vim
 source $HOME/.config/nvim/settings/general.vim
 source $HOME/.config/nvim/settings/mappings.vim
+luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " sneak configurations
 " case insensitive sneak
@@ -99,3 +100,4 @@ let g:coc_explorer_global_presets = {
 " let g:slime_target = "screen"
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "2"}
+

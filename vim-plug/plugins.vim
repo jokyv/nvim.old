@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'Yggdroot/indentLine'
     Plug 'jpalardy/vim-slime'
+    Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
 
 
