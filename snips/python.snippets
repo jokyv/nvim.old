@@ -66,3 +66,17 @@ MESSAGE = "$2"
 ATTACHMENTS = ['$3',]
 u.send_email(TITLE, MESSAGE, ATTACHMENTS)
 endsnippet
+
+snippet read_filess "read ml files"
+from jokyv.ml import util as u
+path = "/home/jokyv/$1"
+# dictionarty that all data from files will be saved
+final_dic = u.read_files(path)
+final_dic
+train = final_dic['train']
+test = final_dic['test']
+sub = final_dic['sub']
+train
+test
+sub
+endsnippet
