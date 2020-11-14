@@ -6,11 +6,15 @@
 "  |__| \__| |_______| \______/     \__/     |__| |__|  |__| 
 "                                                                
 " settings organized in different files
-source $HOME/.config/nvim/vim-plug/plugins.vim
+" let neovim to load all the plugins first!
+source $HOME/.config/nvim/settings/plugins.vim
+" different configuration files for neovim and plugins
+source $HOME/.config/nvim/settings/general.vim
 source $HOME/.config/nvim/settings/coc.vim
 source $HOME/.config/nvim/settings/fzf.vim
-source $HOME/.config/nvim/settings/general.vim
+" my neovim mappings
 source $HOME/.config/nvim/settings/mappings.vim
+" lua files
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " sneak configurations

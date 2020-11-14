@@ -19,7 +19,7 @@ nnoremap <C-H> <C-W><C-H>
 " use different escape key
 imap jj <Esc>
 imap kk <Esc>
-imap jk <Esc>
+" map jk <Esc>
 imap kj <Esc>
 
 " TAB in general mode will move to text buffer
@@ -53,3 +53,12 @@ nnoremap <C-c> <Esc>
 nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 
+" FZF
+" find a line within the buffer
+nmap // :BLines!<CR>
+" find a line within a project
+nmap ?? :Rg!<CR>
+" find a file
+nmap ff :Files!<CR>
+" find a command with fzf
+nmap cc :Commands!<CR>
