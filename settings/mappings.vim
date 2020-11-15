@@ -1,6 +1,7 @@
 " mappings
 let mapleader=" "
 
+" arrow keys no working in normal mode
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Left> <Nop>
@@ -19,8 +20,8 @@ nnoremap <C-H> <C-W><C-H>
 " use different escape key
 imap jj <Esc>
 imap kk <Esc>
-" map jk <Esc>
-imap kj <Esc>
+imap jkk <Esc>
+imap kjj <Esc>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -50,15 +51,15 @@ nnoremap <C-q> :wq!<CR>
 nnoremap <C-c> <Esc> 
 
 " Explorer
-nmap <space>e :CocCommand explorer<CR>
-nmap <space>f :CocCommand explorer --preset floating<CR>
+"nmap <space>e :CocCommand explorer<CR>
+"nmap <space>f :CocCommand explorer --preset floating<CR>
 
 " FZF
 " find a line within the buffer
-nmap // :BLines!<CR>
-" find a line within a project
-nmap ?? :Rg!<CR>
-" find a file
-nmap ff :Files!<CR>
+nmap // :BLines<CR>
+" find a line within a git project
+nmap ?? :Rg<CR>
+" find a file within a git project
+nmap ff :Files<CR>
 " find a command with fzf
-nmap cc :Commands!<CR>
+nmap cc :Commands<CR>

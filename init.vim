@@ -12,6 +12,7 @@ source $HOME/.config/nvim/settings/plugins.vim
 source $HOME/.config/nvim/settings/general.vim
 source $HOME/.config/nvim/settings/coc.vim
 source $HOME/.config/nvim/settings/fzf.vim
+source $HOME/.config/nvim/settings/anyjump.vim
 " my neovim mappings
 source $HOME/.config/nvim/settings/mappings.vim
 " lua files
@@ -30,9 +31,9 @@ let g:gitgutter_enabled = 1
 let g:gitgutter_map_keys = 0
 
 " vimwiki configurations
-let g:vimwiki_list = [{'path': '~/projects/mywiki', 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
+"let g:vimwiki_list = [{'path': '~/projects/mywiki', 'syntax': 'markdown', 'ext': '.md'}]
+"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+"let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
 "autocmd BufWinEnter *.md setlocal syntax=markdown
 "autocmd FileType vimwiki set syntax=markdown
 
@@ -80,24 +81,24 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " explorer configurations
 " https://github.com/weirongxu/coc-explorer
-let g:coc_explorer_global_presets = {
-\   'floating': {
-\      'position': 'floating',
-\   },
-\   'floatingLeftside': {
-\      'position': 'floating',
-\      'floating-position': 'left-center',
-\      'floating-width': 50,
-\   },
-\   'floatingRightside': {
-\      'position': 'floating',
-\      'floating-position': 'left-center',
-\      'floating-width': 50,
-\   },
-\   'simplify': {
-\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-\   }
-\ }
+"let g:coc_explorer_global_presets = {
+"\   'floating': {
+"\      'position': 'floating',
+"\   },
+"\   'floatingLeftside': {
+"\      'position': 'floating',
+"\      'floating-position': 'left-center',
+"\      'floating-width': 50,
+"\   },
+"\   'floatingRightside': {
+"\      'position': 'floating',
+"\      'floating-position': 'left-center',
+"\      'floating-width': 50,
+"\   },
+"\   'simplify': {
+"\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+"\   }
+"\ }
 
 " vim slime configurations
 " https://github.com/jpalardy/vim-slime

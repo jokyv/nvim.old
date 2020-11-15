@@ -3,8 +3,11 @@ let g:coc_global_extensions = [
     \ 'coc-snippets',
     \ 'coc-python',
     \ 'coc-vimlsp',
+    \ 'coc-pairs',
     \ 'coc-json',
-    \ 'coc-explorer']
+    \ 'coc-jedi',
+    \ 'coc-rls',
+    \ 'coc-sh']
 
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.

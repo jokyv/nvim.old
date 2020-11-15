@@ -11,6 +11,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.jediEnabled": true,
+    "jedi.executable.command": "jedi-language-server",
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "~/mconda/bin/black",
     "python.linting.pylintPath": "~/mconda/bin/pylint",
@@ -22,17 +23,6 @@
         "~/.config/nvim/snips"
     ],
     //"snippets.userSnippetsDirectory": "~/config/nvim/snips",
-    "explorer.width": 30,
-    "explorer.icon.enableNerdfont": true,
-    "explorer.previewAction.onHover": false,
-    "explorer.keyMappings": {
-        "<cr>": [
-            "expandable?",
-            "expand",
-            "open"
-        ],
-        "v": "open:vsplit"
-    },
     "languageserver": {
         "bash": {
             "command": "bash-language-server",
