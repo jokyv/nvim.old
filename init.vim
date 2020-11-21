@@ -49,7 +49,7 @@ let g:airline_right_sep = ''
 let g:airline_theme = 'deus'
 
 " startify configurations
-let g:startify_session_dir = '~/dot/nvim/sessions'
+let g:startify_session_dir = '~/nvim/sessions'
 let g:startify_files_number = 5
 let g:startify_enable_special = 1
 let g:startify_session_autoload = 1
@@ -65,7 +65,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
      \ { 'b': '~/.bashrc' },
      \ { 'bb': '~/dot/scripts/' },
-     \ { 'nv': '~/dot/nvim/init.vim' },
+     \ { 'nv': '~/nvim/init.vim' },
      \ { 'dot': '~/dot'},
      \ { 'pro': '~/projects'},
      \ ]
@@ -81,24 +81,24 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " explorer configurations
 " https://github.com/weirongxu/coc-explorer
-"let g:coc_explorer_global_presets = {
-"\   'floating': {
-"\      'position': 'floating',
-"\   },
-"\   'floatingLeftside': {
-"\      'position': 'floating',
-"\      'floating-position': 'left-center',
-"\      'floating-width': 50,
-"\   },
-"\   'floatingRightside': {
-"\      'position': 'floating',
-"\      'floating-position': 'left-center',
-"\      'floating-width': 50,
-"\   },
-"\   'simplify': {
-"\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-"\   }
-"\ }
+let g:coc_explorer_global_presets = {
+\   'floating': {
+\      'position': 'floating',
+\   },
+\   'floatingLeftside': {
+\      'position': 'floating',
+\      'floating-position': 'left-center',
+\      'floating-width': 50,
+\   },
+\   'floatingRightside': {
+\      'position': 'floating',
+\      'floating-position': 'left-center',
+\      'floating-width': 50,
+\   },
+\   'simplify': {
+\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   }
+\ }
 
 " vim slime configurations
 " https://github.com/jpalardy/vim-slime

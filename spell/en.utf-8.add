@@ -1,6 +1,8 @@
+apps
 bashrc
 coc
 colorscheme
+conda
 config
 csv
 debian
@@ -12,7 +14,9 @@ lightline
 linux
 mkdir
 neovim
+pacman
 plugin
+plugins
 rsync
 screenfetch
 startify

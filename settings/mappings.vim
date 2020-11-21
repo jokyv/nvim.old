@@ -51,8 +51,8 @@ nnoremap <C-q> :wq!<CR>
 nnoremap <C-c> <Esc> 
 
 " Explorer
-"nmap <space>e :CocCommand explorer<CR>
-"nmap <space>f :CocCommand explorer --preset floating<CR>
+nmap ee :CocCommand explorer<CR>
+nmap fe :CocCommand explorer --preset floating<CR>
 
 " FZF
 " find a line within the buffer
