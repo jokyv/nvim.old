@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
     Plug 'justinmk/vim-sneak'
     "Plug 'vimwiki/vimwiki'
+    "Plug 'pechorin/any-jump.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'honza/vim-snippets'    
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -23,7 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Yggdroot/indentLine'
     Plug 'jpalardy/vim-slime'
     Plug 'norcalli/nvim-colorizer.lua'
-    Plug 'pechorin/any-jump.vim'
+    Plug 'rust-lang/rust.vim'
 call plug#end()
 
 

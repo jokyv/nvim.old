@@ -44,6 +44,7 @@ map <F7> :colorscheme dracula<CR>
 map <F8> :colorscheme vim-monokai-tasty<CR>
 " map for executing a python file within nvim
 nnoremap <F9> <Esc>:w<CR>:! python %<CR>
+nnoremap <F10> <Esc>:w<CR>:! cargo run %<CR>
 
 " alternative way to save
 nnoremap <C-s> :w<CR>

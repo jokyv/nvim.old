@@ -51,3 +51,9 @@ set nowritebackup
 " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 " au! BufWritePost $MYVIMRC source %      
 
+" auto commands to enable spell check when you open a markdown file
+augroup markdownSpell
+    autocmd!
+    autocmd FileType markdown setlocal spell
+    autocmd BufRead,BufNewFile *.md setlocal spell
+augroup END
