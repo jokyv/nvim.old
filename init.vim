@@ -5,104 +5,79 @@
 "  |  |\   | |  |____ |  `--'  |   \    /    |  | |  |  |  | 
 "  |__| \__| |_______| \______/     \__/     |__| |__|  |__| 
 "                                                                
-" settings organized in different files
+"
+" SETTINGS ORGANIZED INTO DIFFERENT FILES
+"
 " let neovim to load all the plugins first!
 source $HOME/.config/nvim/settings/plugins.vim
 " different configuration files for neovim and plugins
 source $HOME/.config/nvim/settings/general.vim
 source $HOME/.config/nvim/settings/coc.vim
 source $HOME/.config/nvim/settings/fzf.vim
-source $HOME/.config/nvim/settings/anyjump.vim
+source $HOME/.config/nvim/settings/markdown_preview.vim
+" source $HOME/.config/nvim/settings/anyjump.vim
 " my neovim mappings
 source $HOME/.config/nvim/settings/mappings.vim
 " lua files
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
-" sneak configurations
-" case insensitive sneak
-let g:sneak#use_ic_scs = 1
-" immediately move to the next instance of search
-let g:sneak#s_next = 1
+" GENERAL NEOVIM SETTINGS
+"
+" enable syntax highlighting
+syntax enable
+" set nolist
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
 
-" gitgutter configurations
-nmap ) <Plug>(GitGutterNextHunk)
-nmap ( <Plug>(GitGutterPrevHunk)
-let g:gitgutter_enabled = 1
-let g:gitgutter_map_keys = 0
+" default colorscheme
+colorscheme gruvbox
+set background=dark 
+set cursorline
+ 
+" general settings
+set secure " disable unsafe commands in local .vimrc files
+set updatetime=500 " how fast vim updates the file, to low creates problems
+filetype plugin indent on
+syntax on
+set autoread wildmode=longest,list,full " show tab autocompletion like bash
+set number relativenumber "set line and relative numbers
+set clipboard+=unnamedplus " copy to clipboard
+set noshowmode
+set display+=lastline "Always try to show a paragraph’s last line.
+set showtabline=2 "Always display the tabline, even if there is only one tab
+set t_Co=256 "Set terminal to 256 colors
+set colorcolumn=80
+set showmatch "show the matching part of the pair for [] {} and ()
+set splitbelow splitright " opens new split below or on the right
 
-" vimwiki configurations
-"let g:vimwiki_list = [{'path': '~/projects/mywiki', 'syntax': 'markdown', 'ext': '.md'}]
-"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-"let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
-"autocmd BufWinEnter *.md setlocal syntax=markdown
-"autocmd FileType vimwiki set syntax=markdown
+" Tabs
+set shiftwidth=4 "shift lines by 4 spaces
+set softtabstop=4 "number of spaces in tab when editing
+set expandtab "expand tabs into spaces
+set tabstop=4 "set tabs to have 4 spaces
+set smartindent 
+" 
+" Disable error and visual bells
+set noerrorbells
+set novisualbell
+set t_vb=
 
-" vim airline configuration
-let g:airline#extensions#tabline#enabled = 1 " enable tabline
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
-let g:airline_powerline_fonts = 1 " enable powerline fonts
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_theme = 'deus'
+" misc
+set noswapfile "Disable swap files
+" those two will help to search by ignoring lower and upper case
+set ignorecase
+set smartcase 
+" The following 3 are needed for coc
+set hidden
+set nobackup
+set nowritebackup
 
-" startify configurations
-let g:startify_session_dir = '~/nvim/sessions'
-let g:startify_files_number = 5
-let g:startify_enable_special = 1
-let g:startify_session_autoload = 1
-let g:startify_change_to_vcs_root = 1
-let g:startify_session_persistence = 1
-let g:startify_session_delete_buffers = 1
-let g:startify_lists = [
-     \ { 'type': 'files',     'header': ['   Files:']                        },
-     \ { 'type': 'dir',       'header': ['   Current Directory: '. getcwd()] },
-     \ { 'type': 'sessions',  'header': ['   Sessions:']                     },
-     \ { 'type': 'bookmarks', 'header': ['   Bookmarks:']                    },
-     \ ]
-let g:startify_bookmarks = [
-     \ { 'b': '~/.bashrc' },
-     \ { 'bb': '~/dot/scripts/' },
-     \ { 'nv': '~/nvim/init.vim' },
-     \ { 'dot': '~/dot'},
-     \ { 'pro': '~/projects'},
-     \ ]
+" auto commands to enable spell check when you open a markdown file
+augroup markdownSpell
+    autocmd!
+    autocmd FileType markdown setlocal spell
+    autocmd BufRead,BufNewFile *.md setlocal spell
+augroup END
 
-" web dev icons for startify
-let g:webdevicons_enable_startify = 1
-function! StartifyEntryFormat()
-  return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
-endfunction
-
-" indent line configurations
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-
-" explorer configurations
-" https://github.com/weirongxu/coc-explorer
-let g:coc_explorer_global_presets = {
-\   'floating': {
-\      'position': 'floating',
-\   },
-\   'floatingLeftside': {
-\      'position': 'floating',
-\      'floating-position': 'left-center',
-\      'floating-width': 50,
-\   },
-\   'floatingRightside': {
-\      'position': 'floating',
-\      'floating-position': 'left-center',
-\      'floating-width': 50,
-\   },
-\   'simplify': {
-\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-\   }
-\ }
-
-" vim slime configurations
-" https://github.com/jpalardy/vim-slime
-" let g:slime_target = "screen"
-let g:slime_target = "tmux"
-let g:slime_default_config = {"socket_name": "default", "target_pane": "2"}
-
+" auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+" au! BufWritePost $MYVIMRC source %      
