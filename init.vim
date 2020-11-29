@@ -73,6 +73,7 @@ set nobackup
 set nowritebackup
 
 " auto commands to enable spell check when you open a markdown file
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 augroup markdownSpell
     autocmd!
     autocmd FileType markdown setlocal spell

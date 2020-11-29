@@ -1,37 +1,40 @@
-## Auto configuration
-### Run the following script
-```
+### - Auto configuration - 
+#### Run the following script
+```bash
 ~/dot/scripts/projects-configs.sh
 ```
-## Manual configuration
-### How to install nvim
-```
+
+### - Manual configuration - 
+#### How to install nvim
+```bash
 sudo pacman -S neovim
 ```
-### Clone nvim repo to dot folder
-```
+#### Clone nvim repository to dot folder
+```bash
 git clone https://github.com/jokyv/nvim.git ~/dot/nvim
 ```
-### Symbolic link to .config folder
-```  
+#### Symbolic link to .config folder
+```bash
 ln -s ~/dot/nvim ~/.config/
 ```
-### Install python & node support
-```
+#### Install python & node support
+```bash
 pacman -S python-pip	
 pip3 install pynvim 
 sudo pacman -S npm
 sudo npm i -g neovim
 ```
-### Install nvim plugins and coc-extensions
+#### Install nvim plugins and coc-extensions
+```vimscript
+:CocInstall coc-json coc-python coc-snippets coc-vimlsp coc-pairs coc-jedi coc-explorer coc-rsl
 ```
-CocInstall coc-json coc-python coc-snippets coc-vimlsp coc-pairs coc-jedi coc-explorer coc-rsl
-```
-### Install clipboard support
-```
+#### Install clipboard support
+```bash
 sudo pacman -S xsel
 ```
 
-### Todo list
-- fix snips
-- replace coc-exporer for ranger! 
+### - To do list - 
+- [ ] fix snips, ultisnips
+- [ ] replace coc-explorer with ranger or fern
+- [ ] test easy motion
+- [ ] neovim 0.5

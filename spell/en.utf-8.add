@@ -34,3 +34,5 @@ statusline
 str
 sudo
 vim
+nvim
+MySQL
