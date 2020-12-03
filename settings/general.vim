@@ -92,6 +92,7 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "2"}
 " https://github.com/junegunn/limelight.vim
 let g:limelight_default_coefficient = 0.7
 let g:limelight_conceal_ctermfg=224
+let g:limelight_paragraph_span = 1
 let g:limelight_priority = -1
 autocmd VimEnter * Limelight
 "
@@ -103,9 +104,9 @@ autocmd! User GoyoEnter Limelight
 " vim-markdown
 " https://github.com/plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_toml_frontmatter = 1
 let g:vim_markdown_frontmatter= 1
 let g:vim_markdown_conceal = 0
-let g:vim_markdown_toml_frontmatter = 1
 " let g:vim_markdown_folding_level = 4
 
 
