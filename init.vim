@@ -71,6 +71,8 @@ set smartcase
 set hidden
 set nobackup
 set nowritebackup
+" stop scrolling 8 lines from the end
+set scrolloff=8
 
 " auto commands to enable spell check when you open a markdown file
 autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
