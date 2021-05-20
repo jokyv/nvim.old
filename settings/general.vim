@@ -92,7 +92,7 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "2"}
 " https://github.com/junegunn/limelight.vim
 let g:limelight_default_coefficient = 0.7
 let g:limelight_conceal_ctermfg=224
-let g:limelight_paragraph_span = 1
+let g:limelight_paragraph_span = 3
 let g:limelight_priority = -1
 autocmd VimEnter * Limelight
 "
