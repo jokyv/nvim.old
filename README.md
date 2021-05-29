@@ -11,11 +11,7 @@ sudo pacman -S neovim
 ```
 #### Clone nvim repository to dot folder
 ```bash
-git clone https://github.com/jokyv/nvim.git ~/dot/nvim
-```
-#### Symbolic link to .config folder
-```bash
-ln -s ~/dot/nvim ~/.config/
+git clone https://github.com/jokyv/nvim.git ~/.config/
 ```
 #### Install python & node support
 ```bash
@@ -28,7 +24,7 @@ sudo npm i -g neovim
 ```vimscript
 :CocInstall coc-json coc-python coc-snippets coc-vimlsp coc-pairs coc-jedi coc-explorer coc-rsl
 ```
-#### Install clipboard support
+#### Install clipboard support (mac doesn't need)
 ```bash
 sudo pacman -S xsel
 ```
