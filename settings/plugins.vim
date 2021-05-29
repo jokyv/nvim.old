@@ -36,5 +36,3 @@ Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 
 call plug#end()
-
-
