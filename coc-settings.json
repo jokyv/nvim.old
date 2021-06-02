@@ -6,7 +6,8 @@
         "javascript",
         "yaml",
         "json",
-        "python"
+        "python",
+        "sh"
     ],
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
@@ -16,7 +17,7 @@
     "python.formatting.blackPath": "~/mconda/bin/black",
     "python.linting.pylintPath": "~/mconda/bin/pylint",
     "python.condaPath": "~/mconda/bin/conda",
-    "python.jediPath": "~/mconda/lib/python3.8/site-packages",
+    "python.jediPath": "~/mconda/lib/python3.9/site-packages/jedi",
     "python.pythonPath": "~/mconda/bin/python",
     "snippets.ultisnips.directories": [
         "UltiSnips",
