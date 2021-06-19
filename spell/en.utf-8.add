@@ -7,9 +7,11 @@ conda
 config
 cron
 csv
+dataframe
 DATATYPE
 debian
 DESC
+diff
 enum
 etc
 EURUSD
@@ -54,6 +56,9 @@ USD
 USDJPY
 vim
 wifi
+<<<<<<< Updated upstream
 dataframe
 lang
 mut
+=======
+>>>>>>> Stashed changes
