@@ -1,6 +1,14 @@
 " mappings
 let mapleader=" "
 
+" no need to type shift semicolon anymore
+nnoremap ; :
+vnoremap ; :
+
+" paste last thing yanked, not deleted
+nmap ,p "0p
+nmap ,P "0P
+
 " arrow keys no working in normal mode
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
@@ -11,7 +19,7 @@ nnoremap <Right> <Nop>
 "nnoremap <Left> :vertical resize +2<CR>
 "nnoremap <Right> :vertical resize -2<CR>
 
-" easier mapping for the split screen
+" easier jumping for the split screen using control jklh
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -23,7 +31,7 @@ imap kk <Esc>
 imap jkk <Esc>
 imap kjj <Esc>
 
-" TAB in general mode will move to text buffer
+" TAB in normal mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
@@ -32,7 +40,7 @@ nnoremap <S-TAB> :bprevious<CR>
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
-" map for set number and relativenumber turns on/off pressing F2 and F3
+" map for tet number and relativenumber turns on/off pressing F2 and F3
 nnoremap <F2> :set nonumber!<CR>
 nnoremap <F3> :set relativenumber!<CR>
 " toggle for spellcheck

@@ -1,3 +1,4 @@
+=======
 apps
 bashrc
 CFDs
@@ -20,16 +21,19 @@ forex
 Forex
 FX
 fzf
+Github
 google
 grep
 imap
 immutables
 JPY
+lang
 lightline
 Linkedin
 linux
 mkdir
 MT4
+mut
 MySQL
 my_wiki
 neovim
@@ -40,30 +44,25 @@ pacman
 plugin
 plugins
 quant
+Refactor
+repo
 rsync
 screenfetch
 SQLite3
 startify
+>>>>>>> Stashed changes
 statusline
 STP
 str
 struct
 sudo
 tmux
+toplevel
 TY3
 unix
+<<<<<<< Updated upstream
 USD
 USDJPY
+username
 vim
 wifi
-<<<<<<< Updated upstream
-dataframe
-lang
-mut
-=======
->>>>>>> Stashed changes
-toplevel
-repo
-username
-Github
-Refactor
